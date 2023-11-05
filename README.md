@@ -6,4 +6,4 @@ Discord Bot
 
 ### Requirements
 1. Need a _.env_ file with the "BOT_TOKEN"
-2. Execute a npm install command
+2. Execute a `npm install` command
