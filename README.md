@@ -1,2 +1,0 @@
-# jam-deebee
-JAM-DB
