@@ -1,0 +1,181 @@
+{
+	"names": [
+		"play", 
+		"jump", 
+		"remove", 
+		"skip", 
+		"back", 
+		"now-playing", 
+		"queue", 
+		"clear", 
+		"repeat", 
+		"loop-one", 
+		"loop", 
+		"shuffle", 
+		"playlist",
+		"pause", 
+		"stop",
+		"disconnect", 
+		"terminate"
+	],
+	"commands" : {
+		"play" : [
+			"`-p`",
+			"`-p (input)`",
+			"`-p (input list)`",
+			"`-play`",
+			"`-play (input)`",
+			"`-play (input list)`"
+		],
+		"jump" : [
+			"`-j (num)`",
+			"`-jump (num)`"
+		],
+		"remove" : [
+			"`-r (num)`",
+			"`-r (num range)`",
+			"`-r (num list)`",
+			"`-remove (num)`",
+			"`-remove (num range)`",
+			"`-remove (num list)`"
+		],
+		"skip": [
+			"`-skip`",
+			"`-next`"
+		],
+		"back": [
+			"`-back`",
+			"`-prev`",
+			"`-previous`"
+		],
+		"now-playing": ["`-playing`", "`-now`"],
+		"queue" : [
+			"`-q`",
+			"`-queue`",
+			"`-q-s (input)`",
+			"`-q-search (input)`",
+			"`-q-j (num)`",
+			"`-q-jump (num)`",
+			"`-q-p (num)`",
+			"`-q-page (num)`"
+		],
+		"clear": ["`-clear`"],
+		"repeat" : ["`-repeat`"],
+		"loop-one" : [
+			"`-loop1`",
+			"`-l1`"
+		],
+		"loop" : [
+			"`-loop`",
+			"`-l`"
+		],
+		"shuffle": ["`-shuffle`"],
+		"playlist": [
+			"`-pl`",
+			"`-playlist`",
+			"`-pl (name)`",
+			"`-pl-s (name)`",
+			"`-pl-save (name)`",
+			"`-pl-r (name)`",
+			"`-pl-remove (name)`",
+			"`-pl-a (user) (name)`",
+			"`-pl-allow (user) (name)`"
+		],
+		"pause": ["`-pause`"],
+		"stop" : ["`-stop`"],
+		"disconnect": [
+			"`-dc`",
+			"`-disconnect`"
+		],
+		"terminate": [
+			"`-bye`",
+			"`-kill`",
+			"`-die`",
+			"`-terminate`"
+		]
+	},		
+	"definitions" : {
+		"play" : [
+			"**1.** When Dee Bee is not in a voice channel, `-p` or `-play` makes her join based on the user who invoked the command.",
+			"**2.** If Dee Bee has an active queue, `-p` or `-play` plays the queue.",
+			"**3.** Multiple inputs are allowed. Separators are `<enter>` and comma (`,`).",
+			"`Example:\n-p <input 1>, <input 2>\n<input 3>\n<input 4>,<input 5>`",
+			"**4.** Mixed inputs are allowed in multiple inputs.",
+			"`Example:\n-p <input 1>, <input 2>\n<yt link>\n<yt link>,<yt link>`",
+			"**5.** Youtube playlists are allowed as long as the playlist is not private. All items in playlist will be added to the queue.",
+			"`Example:\n-p <input 1>, <input 2>\n<yt playlist 1>\n<yt link>,<yt playlist 2>`",
+			"\n*note that \"-p\" and \"-play\" are interchangeable*"
+		],
+		"remove" : [
+			"**1.** To delete a particular song from the queue, input it's song number.",
+			"`Example:\n\"-r 5\" will remove the 5th song\n\"-r 23\" will remove the 23rd song`",
+			"**2.** Input as range is allowed. Separator is dash (`-`).",		
+			"`Example:\n\"-r 3-7\" will remove song 3 to song 9\n\"-r 1-56\" will remove songs 1 to 56`",
+			"**3.** Input as list is allowed. Separator is `<space>`.",
+			"`Example:\n\"-r 3 6 7 1\" will remove song numbers 3, 6, 7, and 1`",
+			"**4.** The keywords `last` and `now` are allowed.",
+			"`Example:\n\"-r last\" will remove the last song\n\"-r now\" will currently playing song`",
+			"\n*note that \"-r\" and \"-remove\" are interchangeable*"
+		],
+		"terminate": [
+			"The commands `-bye`, `-kill`, `-die`, and `-terminate` will terminate Dee Bee's operation (queue list is destroyed and Dee Bee disconnects)."
+		],
+		"jump" : [
+			"The command `-j` or `-jump` jumps and plays a certain song. `last` is allowed as an input to play the last song in queue list.",
+			"`Example: \"-j 5\" will play song 5 immediately; \"-j last\" will play the last song.`"
+		],
+		"skip" : [
+			"The command `-skip` or `-next` will go to the next song in the queue list, if there is one."
+		],
+		"back" : [
+			"The command `-back`, `-prev`, or `-previous` will go to the previous song in the queue list, if there is one."
+		],
+		"queue" : [
+			"**1.** The command `-q` or `-queue` shows the current queue list.",
+			"**2.** The command `-q-s (input)` or `-q-search (input)` will show the queue list in a specific page depending on the searched song.",		
+			"`Example:\n\"-queue-s let it go elsa\" will show the first instance of this song from the queue list`",
+			"**3.** The command `-q-j (song number)` or `-q-jump (song number)` will show the queue list in a specific page depending on the song number.",
+			"`Example:\n\"-q-jump 12\" will show queue list, page 2, if there's page 2.`",
+			"**4.** The command `-q-p (page number)` or `-q-page (page number)` will show the queue list in a specific page.",
+			"`Example:\n\"-queue-p 6\" will show queue list, page 6, if there's page 6.`",
+			"\n*note that:\n\"-q\" and \"-queue\";\n\"-s\" and \"-search\";\n\"-j\" and \"-jump\";\n\"-p\" and \"-page\";\nare all interchangeable*"
+		],
+		"loop-one" : [
+			"The command `-loop1` or `-l1` loops the current song indefinitely. Invoke the command again to toggle off."
+		],
+		"loop" : [
+			"The command `-loop` or `-l` loops the queue list indefinitely. Invoke the command again to toggle off."
+		],
+		"stop" : [
+			"The command `-stop` stops the queue list from playing."
+		],
+		"pause": [
+			"The command `-pause` toggles the pause option for the current song."
+		],
+		"disconnect": [
+			"The command `-dc` or `-disconnect` disconnects Dee Bee but the queue list is not destroyed and the song keeps playing."
+		],
+		"clear": [
+			"The command `-clear` clears the queue list."
+		],
+		"repeat": [
+			"The command `-repeat` will repeat the current song from the start (`0:00`)."
+		],
+		"now-playing": [
+			"The command `-playing` shows what song is currently playing."
+		],
+		"shuffle": [
+			"The command `-shuffle` shuffles the queue list. Invoke the command again to toggle off."
+		],
+		"playlist": [
+			"**1.** The command `-pl` can be used to **show** the available playlists.",
+			"**2.** The command `-pl-s (playlist name)` or `-pl-save (playlist name)` can be used to **save** the current queue list as a playlist.",		
+			"`Example:\n\"-pl-s playlist1\" will save the current queue list as playlist1`",
+			"**3.** The command `-pl-r (playlist name)` or `-pl-remove (playlist name)` can be used to **remove** a playlist.",
+			"`Example:\n\"-pl-r playlist1\" will remove the playlist <playlist-name>`",
+			"**4.** Only owners of the playlist are allow to edit it. The command `-pl-a (username) (playlist name)` or `-pl-allow (username) (playlist name)` can be used to **allow** a user to edit a playlist.",
+			"`Example:\n\"-pl-allow @AngeloAl weebangers\" will allow the user 'AngeloAl' to edit the playlist 'weebangers'`",
+			"\n*note that:\n\"-pl\" and \"-playlist\";\n\"-r\" and \"-remove\";\n\"-s\" and \"-save\";\n\"-a\" and \"-allow\";\nare all interchangeable*"
+		]
+	}
+}

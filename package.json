@@ -1,0 +1,25 @@
+{
+  "name": "jam-db-v2",
+  "version": "1.0.0",
+  "description": "JAM-DB (Dee Bee)",
+  "main": "deebee.js",
+  "scripts": {
+    "test": "node deebee.js 1",
+    "start": "concurrently \"node deebee.js 0\" \"node deebee.js 1\" \"node deebee.js 2\" \"node deebee.js 3\" \"node deebee.js 4\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/voice": "^0.6.0",
+    "@distube/soundcloud": "^0.2.2",
+    "@distube/spotify": "^0.6.3",
+    "concurrently": "^6.2.1",
+    "discord.js": "^13.1.0",
+    "distube": "^3.0.0-beta.38",
+    "dotenv": "^10.0.0",
+    "edit-json-file": "^1.6.0",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9"
+  }
+}

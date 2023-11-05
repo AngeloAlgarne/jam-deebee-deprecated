@@ -1,0 +1,132 @@
+{
+  "names": [
+    "play",
+    "jump",
+    "remove",
+    "skip",
+    "back",
+    "now-playing",
+    "queue",
+    "clear",
+    "repeat",
+    "loop-one",
+    "loop",
+    "shuffle",
+    "playlist",
+    "pause",
+    "stop",
+    "disconnect",
+    "terminate"
+  ],
+  "commandCode": {
+    "play": [
+      "p",
+      "play"
+    ],
+    "jump": [
+      "j",
+      "jump"
+    ],
+    "remove": [
+      "r",
+      "remove"
+    ],
+    "skip": [
+      "skip",
+      "next"
+    ],
+    "back": [
+      "back",
+      "prev",
+      "previous"
+    ],
+    "now-playing": [
+      "now",
+      "playing"
+    ],
+    "queue": [
+      "q",
+      "queue"
+    ],
+    "clear": [
+      "clear",
+      "clr"
+    ],
+    "repeat": [
+      "repeat",
+      "rpt"
+    ],
+    "loop-one": [
+      "l1",
+      "loop1"
+    ],
+    "loop": [
+      "l",
+      "loop"
+    ],
+    "shuffle": [
+      "shuffle",
+      "sfl"
+    ],
+    "playlist": [
+      "pl",
+      "playlist"
+    ],
+    "pause": [
+      "pause",
+      "ps"
+    ],
+    "stop": [
+      "stop",
+      "st"
+    ],
+    "disconnect": [
+      "dc",
+      "disconnect"
+    ],
+    "terminate": [
+      "bye",
+      "kill",
+      "die"
+    ]
+  },
+  "commandDict": {
+    "p": "play",
+    "play": "play",
+    "j": "jump",
+    "jump": "jump",
+    "r": "remove",
+    "remove": "remove",
+    "skip": "skip",
+    "next": "skip",
+    "back": "back",
+    "prev": "back",
+    "previous": "back",
+    "now": "now-playing",
+    "playing": "now-playing",
+    "q": "queue",
+    "queue": "queue",
+    "clear": "clear",
+    "clr": "clear",
+    "repeat": "repeat",
+    "rpt": "repeat",
+    "l1": "loop-one",
+    "loop1": "loop-one",
+    "l": "loop",
+    "loop": "loop",
+    "shuffle": "shuffle",
+    "sfl": "shuffle",
+    "pl": "playlist",
+    "playlist": "playlist",
+    "pause": "pause",
+    "ps": "pause",
+    "stop": "stop",
+    "st": "stop",
+    "dc": "disconnect",
+    "disconnect": "disconnect",
+    "bye": "terminate",
+    "kill": "terminate",
+    "die": "terminate"
+  },
+  "backup": []
+}
