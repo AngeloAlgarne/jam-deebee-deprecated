@@ -2,7 +2,7 @@ This version uses deprecated versions of discordjs packages.
 
 # Introduction
 JAM-DB
-John Angelo's Machine: Discord Bot
+JA's Machine: Discord Bot
 
 The discord bot's name is deebee, and its primary purpose is to be a music bot.
 
