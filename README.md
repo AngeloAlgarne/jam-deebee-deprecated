@@ -2,9 +2,11 @@ This version uses deprecated versions of discordjs packages.
 
 # Introduction
 JAM-DB
-JA's Machine: Discord Bot
+John Angelo's Machine: Discord Bot
 
-The discord bot's name is deebee, and its primary purpose is to be a music bot.
+The discord bot's name is deebee, and its primary purpose is to be a music bot. 
+
+Uses packages like discordjs/opus, ffmpeg, etc., but most of the libraries used are already deprecated.
 
 # Requirements
 1. Need a _.env_ file with the `BOT_TOKEN`
